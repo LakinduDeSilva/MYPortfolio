@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom fade-in animation for smooth transitions */
+    .fade-in {
+      animation: fadeIn 1.5s ease-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700 text-gray-100">
+  <!-- Navigation -->
+  <header class="bg-white shadow-lg text-gray-900">
+    <div class="container mx-auto px-4 py-6 flex items-center justify-between fade-in">
+      <h1 class="text-xl font-bold">My Portfolio</h1>
+      <!-- Hamburger Icon (visible on mobile only) -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      <!-- Desktop Menu -->
+      <nav id="nav-menu" class="hidden md:flex">
+        <a href="#about" class="mx-2 hover:text-blue-500 transition duration-300">About</a>
+        <a href="#skills" class="mx-2 hover:text-blue-500 transition duration-300">Skills</a>
+        <a href="#projects" class="mx-2 hover:text-blue-500 transition duration-300">Projects</a>
+        <a href="#contact" class="mx-2 hover:text-blue-500 transition duration-300">Contact</a>
+      </nav>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white text-gray-900">
+      <nav class="flex flex-col p-4">
+        <a href="#about" class="py-2 border-b border-gray-200 hover:text-blue-500 transition duration-300">About</a>
+        <a href="#skills" class="py-2 border-b border-gray-200 hover:text-blue-500 transition duration-300">Skills</a>
+        <a href="#projects" class="py-2 border-b border-gray-200 hover:text-blue-500 transition duration-300">Projects</a>
+        <a href="#contact" class="py-2 hover:text-blue-500 transition duration-300">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="container mx-auto px-4 py-20 text-center fade-in relative">
+    <h2 class="text-5xl font-bold mb-4 text-white">Hi, I'm Lakindu Muthsanda De Silva</h2>
+    <p class="text-2xl mb-6 text-white">
+      I'm a second-year Honours Computer Science student with a passion for Fullstack and Software Development.
+    </p>
+    <!-- Social Icons (Hero) -->
+    <div class="flex items-center justify-center space-x-4 mb-6">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/lakindu-muthsanda/" target="_blank" rel="noopener noreferrer">
+        <img src="\Images\Linkedin.png" alt="LinkedIn" class="w-8 h-8" />
+      </a>
+      <!-- GitHub -->
+      <a href="https://github.com/LakinduDeSilva" target="_blank" rel="noopener noreferrer">
+        <img src="\Images\github.png" alt="GitHub" class="w-8 h-8" />
+      </a>
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/lakindu_muthsanda/" target="_blank" rel="noopener noreferrer">
+        <img src="\Images\Instagram.png" alt="Instagram" class="w-8 h-8" />
+      </a>
+      <!-- X (Twitter) -->
+      <a href="https://twitter.com/YOUR_X_PROFILE" target="_blank" rel="noopener noreferrer">
+        <img src="\Images\twitter.png" alt="X" class="w-8 h-8" />
+      </a>
+    </div>
+    <a href="#projects" class="bg-white text-blue-900 px-8 py-4 rounded-full hover:bg-gray-200 transition duration-300 shadow-lg">
+      See My Work
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-white py-20 fade-in">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-6 text-gray-900">About Me</h2>
+      <!-- Personal Photo -->
+      <div class="flex justify-center mb-6">
+        <img
+          src="\Images\my image.jpg"
+          alt="Lakindu Muthsanda De Silva"
+          class="w-48 h-48 rounded-full object-cover shadow-lg"
+        />
+      </div>
+      <p class="max-w-2xl mx-auto text-center text-lg text-gray-700">
+        I am currently pursuing my Honours degree in Computer Science. My interests lie in building innovative
+        full-stack solutions and refining my skills in software development. I thrive on challenges and
+        continuously seek to improve my knowledge in both front-end and back-end technologies.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500 fade-in">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-6 text-white">My Skills</h2>
+      <p class="max-w-2xl mx-auto text-center text-lg text-white mb-8">
+        I have experience with a wide range of technologies for front-end, back-end, and databases.
+      </p>
+      <!-- Skills Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        <!-- Skill 1 -->
+        <div class="flex flex-col items-center bg-white text-gray-900 rounded-lg p-4 shadow-lg transform transition duration-300 hover:scale-105">
+          <span class="text-xl font-bold mb-2">HTML</span>
+          <p class="text-sm">Markup Language</p>
+        </div>
+        <!-- Skill 2 -->
+        <div class="flex flex-col items-center bg-white text-gray-900 rounded-lg p-4 shadow-lg transform transition duration-300 hover:scale-105">
+          <span class="text-xl font-bold mb-2">CSS</span>
+          <p class="text-sm">Styling Language</p>
+        </div>
+        <!-- Skill 3 -->
+        <div class="flex flex-col items-center bg-white text-gray-900 rounded-lg p-4 shadow-lg transform transition duration-300 hover:scale-105">
+          <span class="text-xl font-bold mb-2">Bootstrap</span>
+          <p class="text-sm">CSS Framework</p>
+        </div>
+        <!-- Skill 4 -->
+        <div class="flex flex-col items-center bg-white text-gray-900 rounded-lg p-4 shadow-lg transform transition duration-300 hover:scale-105">
+          <span class="text-xl font-bold mb-2">Java</span>
+          <p class="text-sm">Backend & OOP</p>
+        </div>
+        <!-- Skill 5 -->
+        <div class="flex flex-col items-center bg-white text-gray-900 rounded-lg p-4 shadow-lg transform transition duration-300 hover:scale-105">
+          <span class="text-xl font-bold mb-2">Python</span>
+          <p class="text-sm">Scripting & Backend</p>
+        </div>
+        <!-- Skill 6 -->
+        <div class="flex flex-col items-center bg-white text-gray-900 rounded-lg p-4 shadow-lg transform transition duration-300 hover:scale-105">
+          <span class="text-xl font-bold mb-2">Spring Boot</span>
+          <p class="text-sm">Java Framework</p>
+        </div>
+        <!-- Skill 7 -->
+        <div class="flex flex-col items-center bg-white text-gray-900 rounded-lg p-4 shadow-lg transform transition duration-300 hover:scale-105">
+          <span class="text-xl font-bold mb-2">JavaScript</span>
+          <p class="text-sm">Front-End & More</p>
+        </div>
+        <!-- Skill 8 -->
+        <div class="flex flex-col items-center bg-white text-gray-900 rounded-lg p-4 shadow-lg transform transition duration-300 hover:scale-105">
+          <span class="text-xl font-bold mb-2">React</span>
+          <p class="text-sm">Front-End Library</p>
+        </div>
+        <!-- Skill 9 -->
+        <div class="flex flex-col items-center bg-white text-gray-900 rounded-lg p-4 shadow-lg transform transition duration-300 hover:scale-105">
+          <span class="text-xl font-bold mb-2">MySQL</span>
+          <p class="text-sm">Relational DB</p>
+        </div>
+        <!-- Skill 10 -->
+        <div class="flex flex-col items-center bg-white text-gray-900 rounded-lg p-4 shadow-lg transform transition duration-300 hover:scale-105">
+          <span class="text-xl font-bold mb-2">MongoDB</span>
+          <p class="text-sm">NoSQL Database</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-gray-100 fade-in">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-6 text-gray-900">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="bg-white shadow-lg rounded-lg p-6 transform transition duration-500 hover:scale-105">
+          <h3 class="text-xl font-bold mb-2 text-gray-900">Project One</h3>
+          <p class="mb-4 text-gray-700">A brief description of your project highlighting key features and technologies used.</p>
+          <a href="#" class="text-blue-500 hover:underline transition duration-300">View Project</a>
+        </div>
+        <!-- Project 2 -->
+        <div class="bg-white shadow-lg rounded-lg p-6 transform transition duration-500 hover:scale-105">
+          <h3 class="text-xl font-bold mb-2 text-gray-900">Project Two</h3>
+          <p class="mb-4 text-gray-700">A brief description of your project highlighting key features and technologies used.</p>
+          <a href="#" class="text-blue-500 hover:underline transition duration-300">View Project</a>
+        </div>
+        <!-- Project 3 -->
+        <div class="bg-white shadow-lg rounded-lg p-6 transform transition duration-500 hover:scale-105">
+          <h3 class="text-xl font-bold mb-2 text-gray-900">Project Three</h3>
+          <p class="mb-4 text-gray-700">A brief description of your project highlighting key features and technologies used.</p>
+          <a href="#" class="text-blue-500 hover:underline transition duration-300">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gradient-to-r from-blue-800 via-blue-700 to-blue-600 fade-in">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-6 text-white">Contact Me</h2>
+      <div class="max-w-xl mx-auto">
+        <form action="https://formspree.io/f/{your-form-id}" method="POST" class="space-y-4">
+          <div>
+            <label class="block text-lg font-medium mb-1 text-white" for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-full p-3 border border-gray-300 rounded"
+              required
+            />
+          </div>
+          <div>
+            <label class="block text-lg font-medium mb-1 text-white" for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full p-3 border border-gray-300 rounded"
+              required
+            />
+          </div>
+          <div>
+            <label class="block text-lg font-medium mb-1 text-white" for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              class="w-full p-3 border border-gray-300 rounded"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="w-full bg-white text-blue-900 p-3 rounded hover:bg-gray-200 transition duration-300">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-6 fade-in">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-gray-900">&copy; 2025 Lakindu Muthsanda De Silva. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
