@@ -256,7 +256,7 @@
       <!-- Image Container with enforced 1:1 ratio -->
       <div class="relative aspect-square rounded overflow-hidden mb-4">
         <!-- Update the image path/name as needed -->
-        <img src="Images/Keynest.png" alt="KeyNest Estate Agent Application" class="w-full h-full object-cover" />
+        <img src="Images/KeyNest.png" alt="KeyNest Estate Agent Application" class="w-full h-full object-cover" />
         <!-- Hover Overlay -->
         <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300">
           <!-- Single button linking to GitHub -->
@@ -383,33 +383,65 @@
     </div>
   </section>
 
-  <!-- Footer (Creative and Informative) -->
-  <footer class="bg-gradient-to-r from-indigo-900 via-indigo-800 to-indigo-700 py-8 fade-in">
-    <div class="container mx-auto px-4 text-center">
-      <div class="mb-4">
-        <!-- Social Icons in Footer -->
-        <a href="https://www.linkedin.com/in/lakindu-muthsanda/" target="_blank" rel="noopener noreferrer" class="mx-2">
+<!-- Footer -->
+<footer class="bg-gray-800 text-gray-200">
+  <!-- Top Section with 3 Columns -->
+  <div class="container mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+    
+    <!-- ABOUT ME -->
+    <div>
+      <h3 class="font-bold uppercase mb-2">ABOUT ME</h3>
+      <p class="leading-relaxed">
+        I'm Lakindu Muthsanda De Silva, a second-year Honours Computer Science student with 
+        a passion for Fullstack and Software Development. I thrive on building innovative solutions 
+        and refining my skills in software engineering.
+      </p>
+    </div>
+    
+    <!-- CONTACT ME -->
+    <div>
+      <h3 class="font-bold uppercase mb-2">CONTACT ME</h3>
+      <p class="mb-1">Tel: <a href="tel:+94740813285" class="underline hover:text-gray-300">+94 740813285</a></p>
+      <p class="mb-1">
+        Email: 
+        <a href="mailto:lakindumuthsanda123@gmail.com" 
+           class="underline hover:text-gray-300">
+          lakindumuthsanda123@gmail.com
+        </a>
+      </p>
+      <p>Address: Colombo, Sri Lanka</p>
+    </div>
+    
+    <!-- FOLLOW ME -->
+    <div>
+      <h3 class="font-bold uppercase mb-2">FOLLOW ME</h3>
+      <div class="flex space-x-4 mt-2">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/lakindu-muthsanda/" target="_blank" rel="noopener noreferrer">
           <img src="Images/Linkedin.png" alt="LinkedIn" class="w-6 h-6 inline-block" />
         </a>
-        <a href="https://github.com/LakinduDeSilva" target="_blank" rel="noopener noreferrer" class="mx-2">
+        <!-- GitHub -->
+        <a href="https://github.com/LakinduDeSilva" target="_blank" rel="noopener noreferrer">
           <img src="Images/github.png" alt="GitHub" class="w-6 h-6 inline-block" />
         </a>
-        <a href="https://www.instagram.com/lakindu_muthsanda/" target="_blank" rel="noopener noreferrer" class="mx-2">
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/lakindu_muthsanda/" target="_blank" rel="noopener noreferrer">
           <img src="Images/Instagram.png" alt="Instagram" class="w-6 h-6 inline-block" />
         </a>
-        <a href="https://twitter.com/YOUR_X_PROFILE" target="_blank" rel="noopener noreferrer" class="mx-2">
+        <!-- X (Twitter) -->
+        <a href="https://twitter.com/YOUR_X_PROFILE" target="_blank" rel="noopener noreferrer">
           <img src="Images/twitter.png" alt="X" class="w-6 h-6 inline-block" />
         </a>
       </div>
-      <p class="text-gray-200 text-sm">
-        &copy; 2025 Lakindu Muthsanda De Silva. All rights reserved.
-      </p>
-      <p class="text-gray-200 mt-2 text-sm">
-        Contact: <a href="mailto:lakindumuthsanda123@gmail.com" class="underline hover:text-indigo-300">lakindumuthsanda123@gmail.com</a> | 
-        <a href="tel:+94740813285" class="underline hover:text-indigo-300">+94 740813285</a>
-      </p>
     </div>
-  </footer>
+  </div>
+
+  <!-- Bottom Section -->
+  <div class="bg-gray-700 py-4 text-center">
+    <p class="text-sm">&copy; 2025 Lakindu Muthsanda De Silva. All rights reserved.</p>
+  </div>
+</footer>
+
 
   <!-- JavaScript for Hamburger Menu -->
   <script>
